@@ -9,6 +9,8 @@ def handle_sigint(signum, frame):
 
 def handle_sigterm(signum, frame):
     print(licznik)
+    if licznik<100:
+	print("za mało obliczeń");
     running = False
 
 def main():
